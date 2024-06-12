@@ -15,6 +15,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* margin-left: 200px;
+    margin-right: 200px;*/
 }
 
 i {
@@ -176,8 +178,8 @@ i {
     }
 
     .navbar-expand-custom .navbar-collapse {
-        display: -ms-flexbox!important;
-        display: flex!important;
+        display: -ms-flexbox !important;
+        display: flex !important;
         -ms-flex-preferred-size: auto;
         flex-basis: auto;
     }
@@ -299,53 +301,52 @@ i {
 .project1 button {
     border: aqua;
     border-radius: 10px;
-    height: 30px
-    ;
+    height: 30px;
     width: 200px;
     cursor: pointer;
     margin-top: 30px;
     background-color: aqua;
     margin-left: 900px;
-    }
-    
-    .txt {
+}
+
+.txt {
     text-align: left;
     margin-left: 90px;
-    }
-    
-    .img {
+}
+
+.img {
     height: 300px;
     width: 650px;
     border-radius: 0px;
     padding: auto;
     margin-left: 10px;
-    }
-    
-    .ai-assistant-container {
+}
+
+.ai-assistant-container {
     text-align: left;
     margin-top: 40px;
-    }
-    
-    .ai-assistant-text {
+}
+
+.ai-assistant-text {
     margin-bottom: 20px;
     font-size: 16px;
     text-align: left;
     margin-left: 90px;
-    }
-    
-    .ai-assistant-image {
+}
+
+.ai-assistant-image {
     width: 100%;
     max-width: 650px;
     border-radius: 5px;
     margin-top: 20px;
     margin-left: 650px;
-    }
-    
-    .ai-assistant-container {
+}
+
+.ai-assistant-container {
     align-items: left;
-    }
-    
-    .ai-assistant-container button {
+}
+
+.ai-assistant-container button {
     border: aqua;
     background-color: aqua;
     border-radius: 10px;
@@ -356,15 +357,16 @@ i {
     margin-bottom: 20px;
     cursor: pointer;
     margin-left: 900px;
-    }
-    
-    .project3-text {
+    /* Adjusted margin-left */
+}
+
+.project3-text {
     text-align: left;
     margin-left: 90px;
     width: 95%;
-    }
-    
-    .project3 .otp-button {
+}
+
+.project3 .otp-button {
     border: aqua;
     background-color: aqua;
     border-radius: 10px;
@@ -374,10 +376,11 @@ i {
     margin: auto;
     margin-bottom: 20px;
     cursor: pointer;
-    margin-left: 900px; /* Adjusted margin-left */
-    }
-    
-    .project3 button {
+    margin-left: 900px;
+    /* Adjusted margin-left */
+}
+
+.project3 button {
     border: aqua;
     background-color: aqua;
     border-radius: 10px;
@@ -387,10 +390,11 @@ i {
     margin: auto;
     margin-bottom: 20px;
     cursor: pointer;
-    margin-left: 900px; /* Adjusted margin-left */
-    }
-    
-    .contact button {
+    margin-left: 900px;
+    /* Adjusted margin-left */
+}
+
+.contact button {
     background-color: aqua;
     border-radius: 10px;
     height: 30px;
@@ -399,9 +403,9 @@ i {
     margin: auto;
     margin-bottom: 20px;
     cursor: pointer;
-    }
-    
-    .project4 button {
+}
+
+.project4 button {
     background-color: aqua;
     border-radius: 10px;
     height: 30px;
@@ -410,32 +414,32 @@ i {
     margin: auto;
     margin-bottom: 20px;
     cursor: pointer;
-    }
-    
-    .pro {
+}
+
+.pro {
     text-align: left;
     margin-left: 90px;
-    }
-    
-    .project1_img {
+}
+
+.project1_img {
     text-align: center;
     margin: 20px 0;
-    }
-    
-    .img {
+}
+
+.img {
     height: 40px;
     width: 40px;
-    }
-    
-    .slideshowContainer {
+}
+
+.slideshowContainer {
     position: relative;
     overflow: hidden;
     width: 700px;
     height: 400px;
     margin: 20px auto;
-    }
-    
-    .imageSlides {
+}
+
+.imageSlides {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -445,47 +449,48 @@ i {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     z-index: -1;
-    }
-    
-    .visible {
+}
+
+.visible {
     opacity: 1;
-    }
-    
-    .slideshowArrow {
+}
+
+.slideshowArrow {
     font-size: 4em;
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transition: opacity 0.2s ease-in-out;
-    }
-    
-    .slideshowArrow
-    {
+}
+
+.slideshowArrow {
     opacity: 0.75;
-    }
-    
-    #leftArrow1, #leftArrow {
+}
+
+#leftArrow1,
+#leftArrow {
     position: absolute;
     left: 4%;
     top: 50%;
     transform: translate(-50%, -50%);
-    }
-    
-    #rightArrow1, #rightArrow {
+}
+
+#rightArrow1,
+#rightArrow {
     position: absolute;
     right: 4%;
     top: 50%;
     transform: translate(50%, -50%);
-    }
-    
-    .slideshowCircles {
+}
+
+.slideshowCircles {
     position: absolute;
     bottom: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    }
-    
-    .circle {
+}
+
+.circle {
     display: inline-block;
     margin-left: 3px;
     margin-right: 3px;
@@ -494,59 +499,63 @@ i {
     border-radius: 50%;
     border: solid 2px rgba(255, 255, 255, 0.5);
     transition: 1s ease-in-out;
-    }
-    
-    .dot {
+}
+
+.dot {
     background-color: rgba(255, 255, 255, 0.7);
     border: solid 2px rgba(255, 255, 255, 0.5);
-    }
-    
-    #contact-me-section {
+}
+
+#contact-me-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh; /* Full viewport height /
+    height: 100vh;
+    /* Full viewport height /
     text-align: center;
     background-color: black; / Match the theme /
     color: white; / Text color to match the theme */
-    }
-    
-    .contactme h2 {
+}
+
+.contactme h2 {
     font-size: 36px;
-    color: aqua; /* Match the theme */
+    color: aqua;
+    /* Match the theme */
     margin-bottom: 20px;
-    }
-    
-    .form-group {
+}
+
+.form-group {
     margin-bottom: 20px;
-    }
-    
-    .form-group label {
+}
+
+.form-group label {
     display: block;
     margin-bottom: 5px;
     color: white;
-    }
-    
-    .form-group input,
-    .form-group textarea {
+}
+
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 16px;
-    background-color: #333; /* Match the theme */
+    background-color: #333;
+    /* Match the theme */
     color: white;
-    }
-    
-    #contact-form {
+}
+
+#contact-form {
     width: 80%;
     max-width: 500px;
-    }
-    
-    #contact-me-section button {
-    background-color: aqua; /* Match the theme /
+}
+
+#contact-me-section button {
+    background-color: aqua;
+    /* Match the theme /
     color: black; / Text color */
     border: none;
     border-radius: 5px;
@@ -554,28 +563,31 @@ i {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    }
-    
-    #contact-me-section button
-    {
-    background-color: #5bd3d3; /* Slightly darker shade for hover */
-    }
-    
-    #contact-me-section .contact-text {
+}
+
+#contact-me-section button {
+    background-color: #5bd3d3;
+    /* Slightly darker shade for hover */
+}
+
+#contact-me-section .contact-text {
     font-size: 18px;
     color: white;
     margin-top: 20px;
-    }
-    
-    #contact-me-section a.contact {
+}
+
+#contact-me-section a.contact {
     color: aqua;
     text-decoration: none;
     font-weight: bold;
-    }
-    
-    #contact-me-section a.contact
-    {
+}
+
+#contact-me-section a.contact {
     text-decoration: underline;
-    }
-    
-    
+}
+
+.achievements {
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
