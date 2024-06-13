@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     function test() {
         var tabsNewAnim = $('#navbarSupportedContent');
         var activeItemNewAnim = tabsNewAnim.find('.active');
@@ -12,7 +12,7 @@ $(document).ready(function() {
             "height": activeWidthNewAnimHeight + "px",
             "width": activeWidthNewAnimWidth + "px"
         });
-        $("#navbarSupportedContent").on("click", "li", function(e) {
+        $("#navbarSupportedContent").on("click", "li", function (e) {
             $('#navbarSupportedContent ul li').removeClass("active");
             $(this).addClass('active');
             var activeWidthNewAnimHeight = $(this).innerHeight();
@@ -46,51 +46,40 @@ $(document).ready(function() {
     $("#contact-me-section").hide();
 
     // Event listeners for navbar links
-    $("a[href='#projects-section']").click(function() {
+    $("a[href='#projects-section']").click(function () {
         $("#about-me-section").hide();
         $("#contact-me-section").hide();
         $("#achievements-section").hide();
-        $("#courses-section").hide();
         $("#projects-section").show();
     });
 
-    $("a[href='#about-me-section']").click(function() {
+    $("a[href='#about-me-section']").click(function () {
         $("#projects-section").hide();
         $("#contact-me-section").hide();
         $("#achievements-section").hide();
         $("#about-me-section").show();
     });
 
-    $("a[href='#contact-me-section']").click(function() {
+    $("a[href='#contact-me-section']").click(function () {
         $("#projects-section").hide();
         $("#about-me-section").hide();
         $("#achievements-section").hide();
-        $("#courses-section").hide();
         $("#contact-me-section").show();
     });
 
-    $("a[href='#achievements-section']").click(function() {
+    $("a[href='#achievements-section']").click(function () {
         $("#projects-section").hide();
         $("#about-me-section").hide();
         $("#contact-me-section").hide();
-        $("#courses-section").hide();
         $("#achievements-section").show();
-    });
-
-    $("a[href='#courses-section']").click(function() {
-        $("#projects-section").hide();
-        $("#about-me-section").hide();
-        $("#contact-me-section").hide();
-        $("#achievements-section").hide();
-        $("#courses-section").show();
     });
 });
 
-$(window).on('resize', function() {
+$(window).on('resize', function () {
     setTimeout(test, 500);
 });
 
-$(".navbar-toggler").click(function() {
+$(".navbar-toggler").click(function () {
     $(".navbar-collapse").slideToggle(300);
     setTimeout(test, 300);
 });
@@ -179,10 +168,10 @@ function initSlideshow(slideshowContainer, imageClass, leftArrowId, rightArrowId
 }
 
 // Initialize slideshows for different project sections
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var project1SlideshowContainer = document.querySelector('.project1 .slideshowContainer');
     var project3SlideshowContainer = document.querySelector('.project3 .slideshowContainer');
-    var fac_loginSlideshowContainer = document.querySelector('.fac-login .slideshowContainer');
+    var faceLoginSlideshowContainer = document.querySelector('.face_login .slideshowContainer');
 
     if (project1SlideshowContainer) {
         initSlideshow(project1SlideshowContainer, 'imageSlides', '#leftArrow1', '#rightArrow1', 'circle');
@@ -192,25 +181,25 @@ document.addEventListener('DOMContentLoaded', function() {
         initSlideshow(project3SlideshowContainer, 'imageSlides', '#leftArrow', '#rightArrow', 'circle');
     }
 
-    if (fac_loginSlideshowContainer) {
-        initSlideshow(fac_loginSlideshowContainer, 'imageSlides', '#leftArrow', '#rightArrow', 'circle');
+    if (faceLoginSlideshowContainer) {
+        initSlideshow(faceLoginSlideshowContainer, 'imageSlides', '#leftArrow1', '#rightArrow1', 'circle');
     }
 });
 
 // Real-time validation for the contact form
-$('#name').on('input', function() {
+$('#name').on('input', function () {
     validateName();
 });
 
-$('#email').on('input', function() {
+$('#email').on('input', function () {
     validateEmail();
 });
 
-$('#phone').on('input', function() {
+$('#phone').on('input', function () {
     validatePhone();
 });
 
-$('#message').on('input', function() {
+$('#message').on('input', function () {
     validateMessage();
 });
 
@@ -257,7 +246,7 @@ function validateMessage() {
 }
 
 // Form submission handling
-$('#contact-form').submit(function(event) {
+$('#contact-form').submit(function (event) {
     event.preventDefault(); // Prevent form submission
     // Validate all fields before submission
     validateName();
