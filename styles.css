@@ -439,6 +439,20 @@ i {
     width: 40px;
 }
     
+
+.face_login-text
+{
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 90px;
+}
+
+
+
+
+
+
 .slideshowContainer {
     position: relative;
     overflow: hidden;
